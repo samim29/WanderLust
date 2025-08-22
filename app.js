@@ -96,6 +96,11 @@ app.use("/listings", listingsRouter); // Listings CRUD
 app.use("/listings/:id/reviews", reviewsRouter); // Reviews for listings
 app.use("/users", usersRouter); // User authentication and profile
 
+// Redirect root route to /listings
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 // Catch-all for invalid routes (404)
 app.all("*", (req, res, next) => {
     next(new ExpressError(404, "Page Not Found"));
