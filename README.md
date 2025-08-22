@@ -43,7 +43,7 @@ major-project/
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/wanderlust.git
+   git clone https://github.com/samim29/WanderLust.git
    cd wanderlust
    ```
 
